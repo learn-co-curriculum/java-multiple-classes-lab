@@ -6,7 +6,7 @@
 
 ## Instructions
 
-Fork and clone this lab. The project contains a class `MenuItem` that
+Fork and clone this lab. The project contains a class `MenuItem` that 
 encapsulates the name and price of an item on a restaurant
 menu.  Do not alter the `MenuItem` class.
 
@@ -14,6 +14,10 @@ The `Menu` class constructor initializes an array of `MenuItem` objects.
 
 You will update the `Menu`  methods
 to pass the Junit tests in the `MenuTest` class.
+
+The Junit tests check the output produced by the methods using
+classes called `ByteArrayOutputStream` and `PrintStream`.  We'll
+learn more about these classes in a later lesson.
 
 ## Task #1 - Get menu item
 
@@ -39,11 +43,9 @@ Edit the `MenuTest` class to remove the `@Disabled` annotation on
 the `itemLookup` and `itemNotFound` test methods.
 Confirm both tests pass.
 
-
-
 ## Task #3 - Adjust price
 
-Edit the `Menu` class to implement the
+Edit the `Menu` class to implement the 
 `adjustPrice(int i, double amount)` method.
 If the index is within bounds,
 the method should add the `amount` (which might be negative)
